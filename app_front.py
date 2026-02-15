@@ -57,7 +57,7 @@ if st.button("🔍 Analyze Email"):
     else:
         try:
             response = requests.post(
-            "http://localhost:8000/predict",
+            "https://spam-email-classifier-ydc1.onrender.com",
             data=email_text,
             headers={"Content-Type": "text/plain"}
             )
